@@ -2,9 +2,9 @@
 
 ## User Story
 
-AS A Bootcamp student
-I WANT a portfolio site 
-SO THAT I can showcase my work to recruiters and clients
+* AS A Bootcamp student
+* I WANT a portfolio site 
+* SO THAT I can showcase my work to recruiters and clients
 
 ## Acceptance Criteria
 
