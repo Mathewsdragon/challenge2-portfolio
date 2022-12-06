@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+  color: rgb(223, 219, 219);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 }
 
 
@@ -26,63 +29,150 @@ p {
   margin: 0;
 }
 
-header{
+
+.nav {
   display: flex;
-  flex-direction: row;
-  padding: 20px;
-  background-color: bisque;
- }
+  background-color: black;
+  padding:20px;
+}
 
-
- #NameIntro {
-  background-color: skyblue;
-  color: black;
-  font-size: 16px;
-  padding: 15px;
-  width: 25%;
-
- }
-
-#ImgAvatar{
+.left, .center, .right {
   height: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 30%;
-  }
-
-.navigation{
-height: 50px;
-display: flex;
-justify-content: center;
-align-items: center;
-
-
+ align-items: center;
+ ;
 }
 
-.navigation div {
+.right {
+  color:white;
+  font-size: 18px;
+  padding: 10px;
+  width:75%;
+  justify-content: flex-end; 
+  
+}
 
-  color: rgb(10, 10, 10);
+.right a {
+  color: white;
   padding: 10px;
   font-size: 18px;
   text-decoration: none;
-  font-family: arial;
+  font-family:arial;
+    
+}
 
+.left {
+  color:black;
+  font-size: 16px;
+  padding: 15px;
+  width:15%;
+  justify-content: flex-start;
 }
 
 
 /*need to understand this part of the code - avatar image- and why it doesnt work properly*/
-.ImgAvatar {
-width:5%;
+.center {
+width:10%;
 border-radius: 50%; 
 overflow: hidden;
 }
 
 
-.ImgAvatar .avatar1{
+.center .avatar1{
 width:50px;
 height:50px;
 align-self: center;
 }
 
 
+.hero-banner{
+  margin-top:20px;
+  height:500px;
+  width: auto;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+#SpecialText{
+ font-size: xx-large;
+}
+
+
+#page-wrapper{
+
+   margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+"about about about"
+"work "
+"contact";
+
+  }
+  
+/*
+  .page-section {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: start;
+  }
+
+  */
+
+  .page-section {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .about, .work, .contact {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+
+.about{
+  grid-area: about;
+  margin-top:20px;
+  background-image: url("../images/02-portfolio-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+  }
+
+ .work{
+    grid-area: work;
+  }
+
+  .contact{
+    grid-area: contact;
+  }
+
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    height: 100px;
+    color: rgb(223, 219, 219);
+  }
+
+  .footer a {
+    padding: 20px 40px;
+    
+  }
+  
