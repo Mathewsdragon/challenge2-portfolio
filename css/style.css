@@ -22,35 +22,39 @@ h4,
 h5,
 h6 {
   margin: 0;
-  
+
 }
 
 p {
   margin: 0;
+  font-style: normal;
+  text-shadow: none;
+  color: black;
 }
 
 
 .nav {
   display: flex;
+  justify-content: space-between;
   background-color: black;
-  padding:20px;
+  padding: 20px;
 }
 
-.left, .center, .right {
+.left,
+.right {
   height: 50px;
   display: flex;
   justify-content: center;
- align-items: center;
- ;
+  align-items: center;
+  ;
 }
 
 .right {
-  color:white;
+  color: white;
   font-size: 18px;
   padding: 10px;
-  width:75%;
-  justify-content: flex-end; 
-  
+  justify-content: flex-end;
+
 }
 
 .right a {
@@ -58,37 +62,36 @@ p {
   padding: 10px;
   font-size: 18px;
   text-decoration: none;
-  font-family:arial;
-    
+  font-family: arial;
+
 }
 
 .left {
-  color:black;
+  color: black;
   font-size: 16px;
   padding: 15px;
-  width:15%;
+  width: 15%;
   justify-content: flex-start;
 }
 
 
 /*need to understand this part of the code - avatar image- and why it doesnt work properly*/
-.center {
-width:10%;
-border-radius: 50%; 
-overflow: hidden;
+
+
+
+.left .avatar1 {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  align-self: center;
 }
 
 
-.center .avatar1{
-width:50px;
-height:50px;
-align-self: center;
-}
-
-
-.hero-banner{
-  margin-top:20px;
-  height:500px;
+.hero-banner {
+  margin-top: 20px;
+  height: 500px;
   width: auto;
   background-image: url("../images/02-hero-bg.jpg");
   background-repeat: no-repeat;
@@ -96,83 +99,91 @@ align-self: center;
 
 }
 
-#SpecialText{
- font-size: xx-large;
+#SpecialText {
+  font-size: xx-large;
 }
 
 
-#page-wrapper{
 
-   margin: 0px 5%;
-    display: grid;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-"about about about"
-"work "
-"contact";
+#about {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(238, 225, 225);
+  padding: 20px;
 
-  }
-  
-/*
-  .page-section {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
-    cursor: pointer;
-    display: grid;
-    align-content: start;
-  }
 
-  */
+}
 
-  .page-section {
-    display: flex;
-    height: 400px;
-    width: 100%;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  
-  .about, .work, .contact {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 20px;
-  }
+#work {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(238, 225, 225);
+  padding: 20px;
 
-.about{
-  grid-area: about;
-  margin-top:20px;
+}
+
+
+#workright {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "project1  project1"
+    "project2  project3"
+    "project4  project5";
+}
+
+
+
+
+
+.Project1 {
+  grid-area: project1;
   background-image: url("../images/02-portfolio-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.Project2 {
+  grid-area: project2;
+}
 
 
-  }
-
- .work{
-    grid-area: work;
-  }
-
-  .contact{
-    grid-area: contact;
-  }
+.Project3 {
+  grid-area: project3;
+}
 
 
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: gray;
-    height: 100px;
-    color: rgb(223, 219, 219);
-  }
+.Project4 {
+  grid-area: project4;
+}
 
-  .footer a {
-    padding: 20px 40px;
-    
-  }
-  
+.Project5 {
+  grid-area: project5;
+}
+
+
+
+
+#contact {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(238, 225, 225);
+  padding: 20px;
+}
+
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  height: 100px;
+  color: rgb(223, 219, 219);
+}
+
+.footer a {
+  padding: 20px 40px;
+
+}
