@@ -109,6 +109,7 @@ p {
   justify-content: space-between;
   background-color: rgb(238, 225, 225);
   padding: 20px;
+  
 
 
 }
@@ -141,24 +142,45 @@ p {
   background-image: url("../images/02-portfolio-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  
 }
 
 .Project2 {
   grid-area: project2;
+  background-image: url("../images/02-portfolio-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 
 .Project3 {
   grid-area: project3;
+  background-image: url("../images/02-portfolio-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
 
 
 .Project4 {
   grid-area: project4;
+  background-image: url("../images/02-portfolio-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
 
 .Project5 {
   grid-area: project5;
+  background-image: url("../images/02-run-buddy.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
 
 
